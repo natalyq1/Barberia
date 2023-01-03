@@ -1,0 +1,257 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 1.5em 0;
+}
+.caja{
+    width: 980px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(16, 140, 198);
+    text-decoration: underline;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #fff;
+}
+.productos li:hover{
+    box-shadow: 2px 2px 3px rgb(16, 140, 198);
+    border-color: rgb(16, 140, 198);
+}
+.productos li:active{
+    border-color: rgb(32, 209, 150);
+    box-shadow: 2px 2px 3px rgb(32, 209, 150);
+}
+.productos h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 30px;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background-image: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: #fff;
+    font-size: 13px;
+    margin: 20px;
+}
+.form-bg{
+    background-color: rgba(95, 138, 156, 0.377);
+    padding: 2em 2em;
+    margin: 4em 4em 0 4em;
+    border-radius: 12px;
+}
+form label, form legend{
+    display: block;
+    font-size: 18px;
+    margin: 0.3em 0 0.5em 0.5em;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 1em 2em;
+    padding: 0.5em 1em;
+    width: 80%;
+}
+.checkbox, select{
+    margin: 0.8em 0.5em;
+}
+.enviar{
+    width: 40%;
+    padding: 0.7em 0;
+    margin: 1.2em;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgba(95, 138, 156, 0.905);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: rgba(11, 107, 148, 0.766) ;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 0.5em 8em;
+}
+thead{
+    background: #555555;
+    color: #fff;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000000;
+    padding: 0.4em 1em;
+}
+
+/*CSS para nuestra pagina index*/
+/*main > p{ /*todos los parrafos del main
+    background: red;
+}
+img + p{ /*el parrafo siguiente de la imagen
+    background: yellow;
+}
+img ~ p{/*todos los parrafos despues de la imagen, simbolo de negacion
+    background: green;
+}
+.principal p:not(#mision){/*todos excepto el parrafo de el id mision
+    background: blue;
+}*/
+main{
+    background:linear-gradient(#fff,#888888);
+    padding-bottom: 2em;
+}
+.banner{
+    width: 100%;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;/*2 veces ese tamaño que viene en el padron*/
+    margin: 0.5em 0;
+    clear: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+/*.titulo-principal::first-letter{
+    font-weight: 700;
+}
+.titulo-principal::before{
+    content: "[";
+}
+.titulo-principal::after{
+    content: "]";
+}
+p::first-line{
+   font-style: italic; 
+}*/
+.principal{
+    padding: 2em;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p{
+    margin:0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 160px;
+    float: left;
+    margin-right: 1em;
+}
+.mapa{
+    padding: 0 0 2em;
+    margin: 1em auto;
+}
+.mapa iframe{
+    display: flex;
+    justify-self: center;
+    margin: 1em auto 3em auto;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.contenido-diferenciales{
+    width: 840px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: inset 0px 0px 100px rgba(11, 107, 148, 0.3) 
+}
+.items{
+    line-height: 3.13;
+}
+.items::before{
+    content: "★";
+    margin-right: 0.3em;
+}
+.items:first-child{/*se puede usar nth-child(3) (2n)pares para indicar cual*/
+    font-weight: bold;
+}
+.imagen-diferenciales{
+    width: auto;
+    height: 300px;
+    transition: 400ms;
+    box-shadow: 8px 8px 30px 5px rgb(12, 8, 36) ;/*eje x -eje y -difuminado -area de expansion -color  */
+}
+.imagen-diferenciales:hover{
+    opacity: 0.5;
+}
+.video{
+    width: 560px;
+    margin: 3em auto 0 auto;
+    padding: 2em 0;
+}
+
+@media screen and (max-width:480px){
+   h1{
+    text-align: center;
+   }
+   nav{
+    position: static
+   }
+   
+    .caja, .principal, .mapa iframe, .contenido-diferenciales, .imagen-diferenciales, .video{
+    width: auto;
+    height: auto;
+   } 
+   .lista-diferenciales, .imagen-diferenciales{
+    width: 100%;
+   }
+}
+
